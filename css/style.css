@@ -193,6 +193,26 @@ footer
     padding-top: 8px;
 }
 
+table {
+    vertical-align: middle;
+    table-layout: fixed;
+    width: 90%;
+  }
+  
+  th,
+  td {
+    text-align: start;
+    padding: 2px;
+    height: 15%;
+  }
+  td a img{
+    width: 10%;
+    height: auto;
+  }
+
+
+
+
 /*Responsividad de la pagina*/
 
  @media(max-width: 992px){

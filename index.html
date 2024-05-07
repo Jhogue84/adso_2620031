@@ -4,44 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!--
-      coloque elnombre de
-    <style>
-      body {
-        background-color: brown, color(srgb red green blue);
-      }
-    </style>
-    -->
+    <!--iconos y estilo Materialize-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/estiloSena.css" />
   </head>
   <body>
     <!--Header y mi nav, menu navegacion-->
-    <header>
-      <nav>
-        <input type="checkbox" id="chkMenu" />
-        <label for="chkMenu" class="chkMenuBtn"
-          ><img src="img/menu_hamb.png"
-        /></label>
-        <a href="index.html" class="nav-logo">
-          <img src="img/logo_sena_naranja.png" alt="Logo del Sena" />
-        </a>
-        <ul>
-          <li>
-            <a href="index.html" class="active">Inicio</a>
-          </li>
-          <li><a href="pagina/informacion.html">Informacion</a></li>
-          <li>
-            <a href="pagina/nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="pagina/aprendices.html">Lista Aprendices</a>
-          </li>
-          <li>
-            <a href="pagina/contactos.html">Contactos</a>
-          </li>
-          <li class="nav-enlace"><a href="#">Prueba</a></li>
-        </ul>
+    <header class="navbar-fixed">
+      <nav class="verde3Sena">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo right">
+            <img
+              src="img/logo_sena_naranja.png"
+              alt="Logo del Sena"
+              width="18%"
+              height="18%"
+            />
+          </a>
+          <!--Menu hamburguesa, y la clase al ul-->
+          <a href="#" data-target="menuHamburguesa" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="hide-on-med-and-down">
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li><a href="pagina/informacion.html">Informacion</a></li>
+            <li>
+              <a href="pagina/nosotros.html">Nosotros</a>
+            </li>
+            <li>
+              <a href="pagina/aprendices.html">Aprendices</a>
+            </li>
+            <li>
+              <a href="pagina/contactos.html">Contactos</a>
+            </li>
+            <li class="nav-enlace">
+              <a href="ejemplos/ejemplo1.html">Prueba</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-trigger" data-target="idProyectos"
+                >Proyectos
+                <i class="material-icons right">arrow_drop_down</i></a
+              >
+              <ul id="idProyectos" class="dropdown-content">
+                <li><a href="#">S. ingreso CDAE</a></li>
+                <li><a href="#">S. Control Ambientes 1</a></li>
+                <li><a href="#">S. Control Ambientes 2</a></li>
+                <li><a href="#">S. Hotel</a></li>
+                <li><a href="#">S. Restaurante</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <!--Ul para el menu de hamburguesa-->
+      <ul class="sidenav" id="menuHamburguesa">
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li><a href="pagina/informacion.html">Informacion</a></li>
+        <li>
+          <a href="pagina/nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="pagina/aprendices.html">Lista Aprendices</a>
+        </li>
+        <li>
+          <a href="pagina/contactos.html">Contactos</a>
+        </li>
+        <li class="nav-enlace">
+          <a href="ejemplos/ejemplo1.html">Prueba</a>
+        </li>
+      </ul>
+      <!--fin ul menu hamburguesa-->
     </header>
     <!--Contenido principal o bienvenidad de mi hoja de vida-->
     <main class="container">
@@ -123,6 +166,15 @@
     </main>
     <!--FIN Contenido principal o bienvenidad de mi hoja de vida-->
     <!--https://www.facebook.com/SENACundinamarca-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //var elems = document.querySelectorAll(".sidenav");
+        //var instances = M.Sidenav.init(elems, options);
+        M.AutoInit();
+      });
+    </script>
     <!--Pie de pagina-->
     <footer>
       Derechos reservados &copy; 2024 | CDAE - Villeta | Regional Cundinamarca

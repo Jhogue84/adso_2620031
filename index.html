@@ -22,17 +22,23 @@
     <header class="navbar-fixed">
       <nav class="verde3Sena">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo right"
-            ><i
-              ><img src="img/logoSenaNaranja64.png" alt="Logo naranja del sena"
-            /></i>
-            <h6>Centro de Desarrollo Agroindustrial y Empresarial - CDAE</h6>
-          </a>
-
+          <div class="container">
+            <a href="#" class="brand-logo right">
+              <i>
+                <img
+                  src="img/logoSenaNaranja64.png"
+                  alt="Logo naranja del sena"
+                  class="responsive-img"
+                />
+              </i>
+              <h6>Centro de Desarrollo Agroindustrial y Empresarial - CDAE</h6>
+            </a>
+          </div>
           <!--Icono Menu hamburguesa, y la clase al ul a la barra de menu-->
-          <a href="#" data-target="menuHamburguesa" class="sidenav-trigger">
+          <a href="#" data-target="menuMovil" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
+          <!--lista opciones menu-->
           <ul class="hide-on-med-and-down">
             <li>
               <a href="index.html">Inicio</a>
@@ -47,27 +53,28 @@
             <li>
               <a href="pagina/contactos.html">Contactos</a>
             </li>
-            <li class="nav-enlace">
-              <a href="ejemplos/ejemplo1.html">Prueba</a>
-            </li>
+            <!--item opcion de dropdown-->
             <li>
-              <a href="#" class="dropdown-trigger" data-target="idProyectos"
+              <a href="#!" class="dropdown-trigger" data-target="idProyectos"
                 >Proyectos
-                <i class="material-icons right">arrow_drop_down</i></a
-              >
-              <ul id="idProyectos" class="dropdown-content">
-                <li><a href="#">S. ingreso CDAE</a></li>
-                <li><a href="#">S. Control Ambientes 1</a></li>
-                <li><a href="#">S. Control Ambientes 2</a></li>
-                <li><a href="#">S. Hotel</a></li>
-                <li><a href="#">S. Restaurante</a></li>
-              </ul>
+                <i class="material-icons right">arrow_drop_down</i>
+              </a>
             </li>
           </ul>
+          <!--fin lista opciones menu-->
         </div>
       </nav>
-      <!--Ul para el menu de hamburguesa-->
-      <ul class="sidenav" id="menuHamburguesa">
+      <!--Lista de opciones menu dropdown. Puede ir en otro lugar-->
+      <ul id="idProyectos" class="dropdown-content">
+        <li><a href="#">S. ingreso CDAE</a></li>
+        <li><a href="#">S. Control Ambientes 1</a></li>
+        <li><a href="#">S. Control Ambientes 2</a></li>
+        <li><a href="#">S. Hotel</a></li>
+        <li><a href="#">S. Restaurante</a></li>
+      </ul>
+      <!--fin Lista de opciones menu dropdown. Puede ir en otro lugar-->
+      <!--Lista para el menu en hamburguesa moviles-->
+      <ul class="sidenav" id="menuMovil">
         <li>
           <a href="index.html">Inicio</a>
         </li>
@@ -81,13 +88,15 @@
         <li>
           <a href="pagina/contactos.html">Contactos</a>
         </li>
-        <li class="nav-enlace">
-          <a href="ejemplos/ejemplo1.html">Prueba</a>
+        <li>
+          <a href="#" class="dropdown-trigger" data-target="idProyectos2">
+            Proyectos <i class="material-icons right">arrow_drop_down</i>
+          </a>
         </li>
       </ul>
-      <!--fin ul menu hamburguesa-->
+      <!--fin Lista para el menu en hamburguesa moviles-->
     </header>
-    <!--Contenido principal o bienvenidad de mi hoja de vida-->
+    <!--Contenido principal o bienvenida pagina adso 2620031-->
     <main class="container">
       <div class="row">
         <div class="col s10">
@@ -113,9 +122,6 @@
           </section>
         </div>
         <div class="col s2">
-          <a href="http://www.google.com" target="_blank"
-            ><img src="img/icoHv.png" alt=""
-          /></a>
           <!--Barra lateral-->
           <aside class="barraLateral">
             <section>
